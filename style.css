@@ -7,16 +7,18 @@
 
 :root {
     --white: #efefef;
-    --grey: #ccc;
+    --grey: #aaa;
     --black: #222;
+    --light: #eee;
+    --lg-green: lightgreen;
     --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    --b-radius: 3px; 
+    --trans: all 0.5s ease-in;
 }
 
 body {
     font-family: 'Quicksand', sans-serif;
     font-weight: 300;
-    background-color: var(--white);
-    color: var(--black);
 }
 
 .container {
@@ -42,11 +44,11 @@ nav a {
     color: var(--white);
     text-decoration: none;
     font-weight: 800;
-    transition: all 0.5s;
+    transition: var(--trans)
 }
 
 nav a:hover {
-    color: var(--grey);
+    color: var(--lg-green);
 }
 
 .logo {
@@ -65,6 +67,8 @@ nav a:hover {
     width: 17vw;
     position: absolute; 
     padding: 20px 30px;
+    color: var(--light);
+    border-radius: var(--b-radius); 
 }
 
 .heading {
@@ -84,31 +88,29 @@ nav a:hover {
     background-color: var(--black);
 }
 
-.no-bg,
-.contact,
-.footer {
-    background: none;
-    color: var(--grey);
+.no-bg {
+    background-color: var(--light);
 }
 
 .btn {
-    color: var(--grey);
-    border: 2px solid var(--grey);
+    color: var(--light);
+    border: 2px solid var(--light);
     padding: 8px 16px;
     cursor: pointer;
     display: inline-block;
     text-decoration: none;
     font-weight: 800;
-    transition: all 0.5s;
+    transition: var(--trans);
 }
 
 .btn:hover {
-    border-color: var(--white);
-    color: var(--white)
+    border-color: var(--lg-green);
+    color: var(--lg-green)
 }
 
 .wildlife-btn {
     margin-top: 17px;
+    border-radius: var(--b-radius);
 }
 
 .img-box {
@@ -118,6 +120,7 @@ nav a:hover {
     height: 70vh;
     margin-left: 32vw;
     overflow: hidden;
+    border-radius: var(--b-radius);
 }
 
 .img-1 {
@@ -146,7 +149,7 @@ nav a:hover {
     height: 70vh;
     display: flex;
     justify-content: center;
-    background-color: var(--grey);
+    background-color: var(--light);
 }
 
 .contact-heading {
@@ -171,7 +174,7 @@ textarea {
     outline: none;
     font-family: 'Quicksand', sans-serif;
     border: 2px solid var(--black);
-    border-radius: 3px;
+    border-radius: var(--b-radius);
     box-shadow: var(--box-shadow);
     background-color: var(--white);
 }
@@ -181,14 +184,15 @@ textarea {
     color: var(--black);
     background-color: var(--white);
     border: 2px solid var(--black);
+    border-radius: var(--b-radius);
     box-shadow: var(--box-shadow);
-    transition: all 0.5s;
+    transition: var(--trans);    
 }
 
 .submit-btn:hover {
-    color: var(--white);
+    color: var(--lg-green);
     background-color: var(--black);
-    border: 2px solid var(--white);
+    border: 2px solid var(--lg-green);
 }
 
 .footer {
@@ -239,8 +243,10 @@ textarea {
 .icons i {
     margin: 20px;
     color: var(--white);
+    cursor: pointer;
 }
 
-a:hover {
-    color: var(--grey);
+.icons i:hover {
+    color: var(--lg-green);
+    transition: var(--trans);
 }
