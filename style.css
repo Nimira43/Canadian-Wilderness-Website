@@ -24,7 +24,7 @@ body {
     color: var(--white);
 }
 
-.heading {
+.header {
     background: linear-gradient(
         rgba(0, 0, 0, 0.4),
         rgba(0, 0, 0, 0.5)),
@@ -42,6 +42,11 @@ nav a {
     color: var(--white);
     text-decoration: none;
     font-weight: 800;
+    transition: all 0.5s;
+}
+
+nav a:hover {
+    color: var(--grey);
 }
 
 .logo {
@@ -58,21 +63,25 @@ nav a {
     margin-left: 72vw;
     text-align: justify;
     width: 17vw;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute; 
     padding: 20px 30px;
 }
 
-h1 {
+.heading {
     font-size: 30px;
     text-align: center;
     font-weight: 400;
     margin-bottom: 15px;
 }
 
+.textbox-1 {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
 .textbox-2 {
     margin-left: 7vw;
     width: 20vw;
+    background-color: var(--black);
 }
 
 .no-bg,
@@ -89,6 +98,13 @@ h1 {
     cursor: pointer;
     display: inline-block;
     text-decoration: none;
+    font-weight: 800;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    border-color: var(--white);
+    color: var(--white)
 }
 
 .wildlife-btn {
@@ -124,4 +140,107 @@ h1 {
         rgba(0, 0, 0, 0.5)),
         url('./images/img-4.jpg') no-repeat center;
     background-size: cover;
+}
+
+.contact {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    background-color: var(--grey);
+}
+
+.contact-heading {
+    margin-bottom: 15px;
+}
+
+form {
+    text-align: center;
+    color: var(--black);
+    margin: auto;
+}
+
+input {
+    display: block;
+}
+
+input,
+textarea {
+    width: 40vw;
+    margin-bottom: 20px;
+    padding: 10px;
+    outline: none;
+    font-family: 'Quicksand', sans-serif;
+    border: 2px solid var(--black);
+    border-radius: 3px;
+    box-shadow: var(--box-shadow);
+    background-color: var(--white);
+}
+
+.submit-btn {
+    display: block;
+    color: var(--black);
+    background-color: var(--white);
+    border: 2px solid var(--black);
+    box-shadow: var(--box-shadow);
+    transition: all 0.5s;
+}
+
+.submit-btn:hover {
+    color: var(--white);
+    background-color: var(--black);
+    border: 2px solid var(--white);
+}
+
+.footer {
+    height: 30vh;
+    color: var(--white);
+    background-color: var(--black);
+    display: flex;
+}
+
+.box {
+    width: 33vw;
+    height: 30vh;
+}
+
+.left {
+    border-right: 1px dotted var(--grey);
+    height: 10vh;
+    margin: auto;
+}
+
+.right {
+    border-left: 1px dotted var(--grey);
+    height: 10vh;
+    margin-top: 10vh;
+    margin: auto;
+}
+
+.left p,
+.right p {
+    padding: 1vw;
+}
+
+.left p {
+    float: right;
+    text-align: right;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.icons {
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+.icons i {
+    margin: 20px;
+    color: var(--white);
+}
+
+a:hover {
+    color: var(--grey);
 }
